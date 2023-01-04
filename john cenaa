@@ -16,10 +16,10 @@ local character = player.Character
 character:WaitForChild("HumanoidRootPart").CFrame = game.workspace.EndPart.CFrame
 end)
 wait(3)]]
-local folderpath = "ServerHopper"
+local folderpath = "Dig to China"
 local PlaceFolder = folderpath.."\\"..PlaceIdString
 local JobIdStorage = PlaceFolder.."\\JobIdStorage.json"
-local CodeToExecute = PlaceFolder.."\\Code.lua"..scriptomegaboba
+local CodeToExecute = PlaceFolder.."\\Code.lua"
 local data
 local code
 
@@ -51,7 +51,7 @@ else
 end
 
 if not isfile(CodeToExecute) then
-    writefile(CodeToExecute,"")
+    writefile(CodeToExecute,scriptomegaboba)
     print("Created CodeToExecute",CodeToExecute)
     return 
 end
@@ -105,5 +105,5 @@ while #servers > 0 do
     task.wait(1)
 end
 else
- print("FUCK OFF DUDE")
+ print("FUCK_OFF_DUDE")
  end
